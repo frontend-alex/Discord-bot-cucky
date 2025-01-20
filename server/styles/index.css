@@ -1,0 +1,89 @@
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+:root {
+	/* font, change to 'gg sans' for default discord font*/
+	--font: 'figtree';
+  
+	--lgbtq-gradient: linear-gradient(90deg, 
+	rgba(255, 0, 0, 0.75), /* red */
+	rgba(255, 165, 0, 0.75), /* orange */
+	rgba(0, 255, 0, 0.75), /* green */
+	rgba(0, 0, 255, 0.75)  /* blue */
+	);
+  
+	/* top left corner text */
+	--corner-text: 'Midnight';
+  
+	/* color of status indicators and window controls */
+	--online-indicator: hsl(140, 80%, 50%); /* vibrant green */
+	--dnd-indicator: hsl(0, 75%, 55%); 
+	--idle-indicator: hsl(50, 80%, 55%); /* vibrant yellow */
+	--streaming-indicator: hsl(260, 75%, 50%); /* vibrant purple */
+  
+	/* accent colors */
+	--accent-1: hsl(0, 0%, 13%); /* links - neutral-800 */
+	--accent-2: hsl(220, 14%, 15%); /* general unread/mention elements - neutral-850 (adjusted) */
+	--accent-3: hsl(220, 14%, 12%); /* accent buttons - neutral-900 */
+	--accent-4: hsl(220, 14%, 10%); /* accent buttons when hovered - neutral-950 (darker) */
+	--accent-5: hsl(220, 14%, 8%); /* accent buttons when clicked */
+	--mention: var(--lgbtq-gradient);
+	--mention-hover: linear-gradient(90deg, 
+	  rgba(255, 0, 0, 0.15), 
+	  rgba(255, 127, 0, 0.15), 
+	  rgba(255, 255, 0, 0.15), 
+	  rgba(0, 255, 0, 0.15), 
+	  rgba(0, 0, 255, 0.15), 
+	  rgba(139, 0, 255, 0.15)
+	);
+  
+	/* text colors */
+	--text-0: #f5f5f5; /* Slightly off-white for better contrast */
+	--text-1: var(--text-2); /* other normally white text */
+	--text-2: hsl(0, 0%, 82%); /* lighter for headings */
+	--text-3: hsl(0, 0%, 73%); /* normal text */
+	--text-4: hsl(0, 0%, 58%); /* slightly lighter for icon buttons and channels */
+	--text-5: hsl(0, 0%, 50%); /* darker for muted channels/chats and timestamps */
+  
+	/* background and dark colors */
+	--bg-1: hsl(0, 0%, 4%); /* slightly lighter for dark buttons when clicked */
+	--bg-2: hsl(0, 0%, 25%); /* slightly lighter for dark buttons */
+	--bg-3: hsl(0, 0%, 8%); /* muted dark for spacing, secondary elements */
+	--bg-4: hsl(0, 0%, 5%); /* darker main background color */
+	--hover: hsla(220, 20%, 35%, 0.1); /* slightly lighter for hovered channels and buttons */
+	--active: hsla(220, 20%, 30%, 0.2); /* stronger contrast for channels and buttons when clicked or selected */
+	--message-hover: hsla(220, 15%, 10%, 0.1); /* subtle highlight for messages when hovered */
+  
+	/* amount of spacing and padding */
+	--spacing: 10px;
+  
+	/* animations */
+	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.4s ease; /* moon icon spin */
+	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+  
+	/* corner roundness (border-radius) */
+	--roundness-xl: 18px; /* roundness of big panel outer corners */
+	--roundness-l: 16px; /* popout panels */
+	--roundness-m: 12px; /* smaller panels, images, embeds */
+	--roundness-s: 8px; /* members, settings inputs */
+	--roundness-xs: 6px; /* channels, buttons */
+	--roundness-xxs: 4px; /* searchbar, small elements */
+  
+	/* direct messages moon icon */
+	--discord-icon: none; /* discord icon */
+	--moon-icon: block; /* moon icon */
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/f/f7/Nazi_swastika_clean.svg'); /* custom icon url */
+	--moon-icon-size: auto;
+  
+	/* filter uncolorable elements to fit theme */
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+  
+	/* nav buttons */
+	--windows-nav: none;
+	--custom-nav: block;
+  }
+  
